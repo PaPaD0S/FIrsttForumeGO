@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; chatset=UTF-8" />
+	<meta name="description" content="Сайт для любителей хорошей музыки" />
+	<title>Nurmach</title>
+	<link href="Нур.css" rel="stylesheet" type="text/css" />
+	<script type="text/Javascript" href="JS.js"></script>
+	<link href="Pho/Icon.jpeg" rel="shortcut icon" type="image/x-icon" />
+	<script src="JS.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<style>		
+		#menu {
+			margin-top: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div id="page-wrap">
+	<header>
+		<a href="Nurmain.html" title="На главную" id="logo">Нурмач</a><span id="About"><a href="About.html" title="Вся инфа" >О Нурминском</a></span>
+		<div class="dropdown">
+		<input type="text" placeholder="Искать трек" id="myInput" onclick="myFunction()" onkeyup="filterFunction()"><br />
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#" onclick="PlaySong0()">Джип</a>
+			<a href="#" onclick="PlaySong1()">Ауф</a>
+			<a href="#" onclick="PlaySong2()">Мент</a>
+			<a href="#" onclick="PlaySong3()">Black Guard</a>
+			<a href="#" onclick="PlaySong4()">Валим</a>
+			<a href="#" onclick="PlaySong5()">Зашумел район</a>
+			<a href="#" onclick="PlaySong6()">А я еду порш</a>
+			<a href="#" onclick="PlaySong7()">Жиднявка</a>
+			<a href="#" onclick="PlaySong8()">Дерьмо вонючее</a>
+		</div>
+		</div>
+		<span class="contact"><a href="Reg.html" title="Регистрация">Засуетиться</a></span><span class="contact"><a href="#okno" title="Вьехать">Вьехать</a></span>
+		<div id="okno">
+		<h3>Вьехать в свой аккаунт</h3><br />
+		<form action="" method="post">
+			<label for="log">Введи погремуху</label>
+			<input type="text"  id="logE" name="logE" placeholder="login" />
+			<label for="pass">Введи шифр</label>
+			<input type="text" id="passE" name="passE" placeholder="password" />
+			<input type="submit" id="ent" name="ent" value="Вьехать" />
+		</form>
+		<a href="#" class="close">Закрыть окно</a>
+		</div>
+	</header>
+	<center>	
+		<div class="clear"><br /></div>	
+		<div id="menu">Разделы</div><br /><hr><br />
+		<div id="menuHrefs">
+			<a href="#" onclick="$('#menuHrefs').hide ()">Скрыть</a><br /><br /><br />
+			<a href="Bratva.html">Братва</a><br /><br /><br />
+			<a href="#" onclick="RandSong()">Слушать случайный трек</a><br /><br /><br />
+			<a href="#" onclick="Nonreg()" >Форум</a><br /><br /><br />
+			<a href="Rad.html">Яйца Родиона</a>
+		</div>
+	</center>
+	</div>
+	<footer>   
+		<div id="Foot">Все права защищены &copy; 2021</div>       
+	</footer>
+</body>
+</html>
+
